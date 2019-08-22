@@ -1,9 +1,13 @@
 /*ELEMENT STYLES*/
+body {
+    padding: 0 10px;
+}
 
 header {
     text-align: center;
     background-color: #2b3545;
     height: 100%;
+    width: 100%;
 }
 
 h1 {
@@ -27,6 +31,7 @@ footer {
     flex: 1;
 }
 
+
 .label {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
@@ -49,6 +54,7 @@ button {
     color: white;
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
+    box-shadow: none;
 }
 
 textarea {
@@ -65,5 +71,11 @@ textarea {
 
 @media (min-width:768px ) {
     
+    .container {
+        display: flex;
+    }
     
+    .label {
+        flex: 2;
+    }
 }

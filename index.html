@@ -23,6 +23,7 @@
 
     <!--line decoration divider here-->
 
+    <!--CONTACT INFORMATION-->
     <div>
         <h2>Contact Information</h2>
         <form class="container">
@@ -49,16 +50,23 @@
 
     <hr>
 
+    <!--NEWSLETTER-->
     <div >
         <h2>Newsletter</h2>
         <p>Select the newsletters you would like to recieve</p>
-        <form class="container">
-            <input type="checkbox" name="html_news" value="HTML news" checked> HTML News
-            <input type="checkbox" name="css_news" value="CSS news"> CSS News
-            <input type="checkbox" name="javascript_news" value="Javascript news"> Javascript News
+        <form>
+            <input type="checkbox" name="html_news" value="HTML news" checked><label>HTML News</label> <br>
+            <input type="checkbox" name="css_news" value="CSS news"><label>CSS News</label> <br>
+            <input type="checkbox" name="javascript_news" value="Javascript news"><label>Javascript News</label> <br>
             <p>Newsletter format</p>
-            <input type="radio" name="html" value="html" checked> HTML
-            <input type="radio" name="plain_text" value="plan text"> Plain text
+            <input type="radio" name="html" value="html" checked> <label>HTML</label><br>
+            <input type="radio" name="plain_text" value="plan text"><label>Plain text</label>
+            
+        </form>
+    </div>
+    
+    <div>
+        <form class="container">
             <p>Other topics you'd like to hear about</p>
             <textarea></textarea>
             <button type="submit">Sign Up</button>
