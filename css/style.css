@@ -1,13 +1,13 @@
 /*ELEMENT STYLES*/
+
 body {
-    padding: 0 10px;
+    line-height: 2;
 }
 
-header {
+.main-header {
     text-align: center;
     background-color: #2b3545;
-    height: 100%;
-    width: 100%;
+    padding: 1em 0;
 }
 
 h1 {
@@ -15,8 +15,27 @@ h1 {
     color: white;
 }
 
+p,
+label {
+    color: gray;
+}
+
 .signup {
     text-align: center;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+::placeholder {
+    text-align: right;
+    font-style: italic;
 }
 
 footer {
@@ -44,6 +63,7 @@ footer {
     border-radius: 6px;
     box-sizing: border-box;
     background-color: #e6e8eb;
+    width: 100%;
 }
 
 button {
@@ -69,13 +89,9 @@ textarea {
 
 /*MEDIA QUERIES*/
 
-@media (min-width:768px ) {
-    
+@media (min-width:768px) {
+
     .container {
         display: flex;
-    }
-    
-    .label {
-        flex: 2;
     }
 }
