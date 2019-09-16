@@ -1,5 +1,11 @@
 /*ELEMENT STYLES*/
 
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     line-height: 2;
 }
@@ -15,6 +21,23 @@ h1 {
     color: white;
 }
 
+.thick {
+    background-color: #000;
+    border: solid 1px;
+    height: 5px;
+    width: 68%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.thin {
+    background-color: #000;
+    border: solid 1px;
+    height: 2px;
+    width: 68%;
+    margin: auto;
+}
+
 p,
 label {
     color: gray;
@@ -26,6 +49,8 @@ label {
 
 fieldset {
     border: 0;
+    margin: auto;
+    padding: 20px;
 }
 
 legend {
@@ -49,6 +74,12 @@ footer {
     flex-direction: column;
     flex: 1;
 }
+
+.news {
+   margin: auto;
+}
+
+/*FORM*/
 
 
 .label {
@@ -92,6 +123,21 @@ textarea {
 @media (min-width:768px) {
 
     .container {
+        width: 75%;
+        align-items: center;
+    }  
+    
+    .row {
         display: flex;
+        align-items: center;
+    }
+    
+    .row input, 
+    .row select {
+        flex-basis: 80%;
+    }
+    
+    .row label {
+        flex-basis: 20%;
     }
 }
