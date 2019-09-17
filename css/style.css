@@ -39,6 +39,14 @@ h1 {
     margin: auto;
 }
 
+.thin-2 {
+     background-color: #DEB841;
+    border: 1px solid #DEB841;
+    height: 2px;
+    width: 100%;
+    margin: auto;
+}
+
 p,
 label {
     color: gray;
@@ -65,6 +73,7 @@ legend {
 ::placeholder {
     text-align: right;
     font-style: italic;
+    color: #37323E;
 }
 
 footer {
@@ -99,9 +108,14 @@ footer {
 }
 
 
-input:focus {
+input:focus,
+select:focus{
     background-color: #BFBDC1;
     transition: ease-in, .7s;
+}
+
+input:invalid {
+    background-color:  #DEB841;
 }
 
 input[type="submit"] {
@@ -133,6 +147,7 @@ textarea:focus {
 }
 
 #zip {
+    display: block;
     width: 50%;
 }
 
