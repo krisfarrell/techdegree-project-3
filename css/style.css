@@ -12,18 +12,19 @@ body {
 
 .main-header {
     text-align: center;
-    background-color: #2b3545;
+    background-color: #37323E;
     padding: 1em 0;
 }
 
 h1 {
-    font-family: 'Libre Caslon Display', serif;
-    color: white;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: #DE9E36;
 }
 
 .thick {
-    background-color: #000;
-    border: solid 1px;
+    background-color: #DEB841;
+    border: 1px solid #DEB841;
     height: 5px;
     width: 68%;
     margin: auto;
@@ -31,8 +32,8 @@ h1 {
 }
 
 .thin {
-    background-color: #000;
-    border: solid 1px;
+    background-color: #DEB841;
+    border: 1px solid #DEB841;
     height: 2px;
     width: 68%;
     margin: auto;
@@ -43,14 +44,17 @@ label {
     color: gray;
 }
 
+.center {
+    text-align: center;
+}
+
 .signup {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 fieldset {
     border: 0;
-    margin: auto;
-    padding: 20px;
 }
 
 legend {
@@ -72,11 +76,7 @@ footer {
 .container {
     display: flex;
     flex-direction: column;
-    flex: 1;
-}
-
-.news {
-   margin: auto;
+    padding: 20px;
 }
 
 /*FORM*/
@@ -93,19 +93,28 @@ footer {
     padding: 10px 20px;
     border-radius: 6px;
     box-sizing: border-box;
+    border: 1px solid gray;
     background-color: #e6e8eb;
     width: 100%;
 }
 
-button {
+
+input:focus {
+    background-color: #BFBDC1;
+    transition: ease-in, .7s;
+}
+
+input[type="submit"] {
     margin-top: 20px;
     padding: 20px 10px;
-    background-color: #37a2ad;
+    background-color: #312F2F;
     border-radius: 5px;
     color: white;
     font-family: 'Cormorant Garamond', serif;
+    color: #DE9E36;
     font-size: 20px;
     box-shadow: none;
+    width: 100%;
 }
 
 textarea {
@@ -118,18 +127,30 @@ textarea {
     resize: none;
 }
 
+textarea:focus {
+    background-color: #BFBDC1;
+    transition: ease-in, .7s;
+}
+
+#zip {
+    width: 50%;
+}
+
 /*MEDIA QUERIES*/
 
 @media (min-width:768px) {
 
     .container {
         width: 75%;
-        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 70%;
     }  
     
     .row {
         display: flex;
         align-items: center;
+        padding: 10px;
     }
     
     .row input, 
@@ -139,5 +160,9 @@ textarea {
     
     .row label {
         flex-basis: 20%;
+    }
+    
+    #zip {
+        max-width: 30%;
     }
 }
