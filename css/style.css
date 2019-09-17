@@ -40,7 +40,7 @@ h1 {
 }
 
 .thin-2 {
-     background-color: #DEB841;
+    background-color: #DEB841;
     border: 1px solid #DEB841;
     height: 2px;
     width: 100%;
@@ -109,16 +109,16 @@ footer {
 
 
 input:focus,
-select:focus{
+select:focus {
     background-color: #BFBDC1;
     transition: ease-in, .7s;
 }
 
 input:invalid {
-    background-color:  #DEB841;
+    background-color: #DEB841;
 }
 
-input[type="submit"] {
+button {
     margin-top: 20px;
     padding: 20px 10px;
     background-color: #312F2F;
@@ -160,23 +160,23 @@ textarea:focus {
         justify-content: center;
         margin: 0 auto;
         width: 70%;
-    }  
-    
+    }
+
     .row {
         display: flex;
         align-items: center;
         padding: 10px;
     }
-    
-    .row input, 
+
+    .row input,
     .row select {
         flex-basis: 80%;
     }
-    
+
     .row label {
         flex-basis: 20%;
     }
-    
+
     #zip {
         max-width: 30%;
     }
